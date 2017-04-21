@@ -29,6 +29,15 @@ results = index.find_by "example_search_term"
 puts results.data # returns algolia response message/results
 ```
 
+###### Search multiple indices by keywords
+```crystal
+index = api.index "example_index"
+results = index.find_multiple([
+    {"params" => "query=data"}
+])
+puts results.data # returns algolia response message/results
+```
+
 ###### List all Indexes
 ```crystal
 index = api.index "example_index"
@@ -81,6 +90,7 @@ objects.delete("4")
 
 puts results.data
 ```
+
 
 ## TODO
 - Batch write operations
