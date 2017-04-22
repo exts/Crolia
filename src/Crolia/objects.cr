@@ -7,7 +7,7 @@ module Crolia
         # search for an object by id w/ optional attributes
         def find(id : String, attr = {} of String => String)
             path = parse_url(api_path("objects/read", {"index" => @index, "id" => id}), @api.api_id, true)
-            path = path + "?" + HTTP::Params.from_hash(attr) if !attr.empty?
+            path = path + "?" + HTTP::Params.encode(attr) if !attr.empty?
 
             api_response(Request.get(path, @api.headers()))
         end

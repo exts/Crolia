@@ -31,7 +31,7 @@ module Crolia
             params["query"] = term
 
             # generate proper url data
-            opts = "?" + HTTP::Params.from_hash(params)
+            opts = "?" + HTTP::Params.encode(params)
 
             path = parse_url(
                 api_path("index/search", {"index" => @index}), 
