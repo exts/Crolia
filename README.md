@@ -12,6 +12,37 @@ dependencies:
     github: exts/Crolia
 ```
 
+## Done
+- List indices
+- Search an index
+- Search an index (alternative)
+- Search multiple indices
+- Delete an index
+- Clear an index
+- Add an object without ID
+- Add/update an object by ID
+- Partially update an object
+- Retrieve an object
+- Retrieve multiple objects
+- Delete an object
+
+## TODO
+- Batch write operations
+- Batch write operations (multiple indices)
+- Browse all index content
+- Browse all index content (alternative)
+- Get index settings
+- Change index settings
+- Copy/move an index
+- Get a task’s status
+- Add an index-specific API key
+- Update an index-specific API key
+- List index-specific API keys
+- List index-specific API keys (for all indices)
+- Retrieve an index-specific API key
+- Delete an index-specific API key
+- Search for facet values
+
 ## Usage
 
 ### Connecting to api
@@ -90,24 +121,6 @@ objects.delete("4")
 
 puts results.data
 ```
-
-
-## TODO
-- Batch write operations
-- Batch write operations (multiple indices)
-- Browse all index content
-- Browse all index content (alternative)
-- Get index settings
-- Change index settings
-- Copy/move an index
-- Get a task’s status
-- Add an index-specific API key
-- Update an index-specific API key
-- List index-specific API keys
-- List index-specific API keys (for all indices)
-- Retrieve an index-specific API key
-- Delete an index-specific API key
-- Search for facet values
 
 ## Contributors
 
